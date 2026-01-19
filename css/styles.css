@@ -469,14 +469,16 @@ h1, h2, h3, h4, h5, h6 {
     top: 80px;
     left: 0;
     right: 0;
-    bottom: 0;
     width: 100%;
+    height: calc(100vh - 80px);
+    height: calc(100dvh - 80px);
     background: var(--color-white);
     padding: var(--space-6);
     transform: translateX(100%);
     transition: var(--transition-base);
     overflow-y: auto;
     z-index: 999;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
   }
 
   .mobile-nav.active {
