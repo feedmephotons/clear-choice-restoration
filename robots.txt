@@ -1,0 +1,35 @@
+# Robots.txt for Clear Choice Restoration
+# https://clearchoicerestoration.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /data/
+Disallow: /logs/
+
+# Disallow utility files
+Disallow: /*.php$
+Disallow: /*.py$
+Disallow: /*.json$
+
+# Allow specific public pages
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /staff.html
+Allow: /gallery.html
+Allow: /testimonials.html
+Allow: /faq.html
+Allow: /contact.html
+Allow: /privacy.html
+Allow: /terms.html
+
+# Allow CSS, JS, and images for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /Images/
+
+# Sitemap location
+Sitemap: https://clearchoicerestoration.com/sitemap.xml

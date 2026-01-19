@@ -1,0 +1,49 @@
+{
+  "name": "Clear Choice Restoration",
+  "short_name": "CCR Roofing",
+  "description": "Indianapolis' trusted family-owned roofing company. Storm damage repair, roof replacement, and complete home exterior solutions.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1B4B8F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "Images/Logos/favicon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "Images/Logos/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "home improvement"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Free Inspection",
+      "short_name": "Inspection",
+      "description": "Schedule a free roof inspection",
+      "url": "/contact.html",
+      "icons": [{"src": "Images/Logos/favicon-256.png", "sizes": "256x256"}]
+    },
+    {
+      "name": "Call Now",
+      "short_name": "Call",
+      "description": "Call (317) 358-8630",
+      "url": "tel:3173588630"
+    },
+    {
+      "name": "Emergency",
+      "short_name": "Emergency",
+      "description": "24/7 Emergency Line",
+      "url": "tel:3179107605"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "staff": [
+    {
+      "id": "staff_001",
+      "name": "Mike Thompson",
+      "role": "Owner & President",
+      "bio": "Mike founded Clear Choice Restoration in 2001 with a simple mission: provide Indianapolis families with honest, quality roofing services. With over 25 years of experience in the construction industry, Mike personally oversees every major project and is dedicated to treating every customer like family.",
+      "photo": "Images/Staff/mike-thompson.jpg",
+      "email": "mike@clearchoicerestoration.com",
+      "phone": "(317) 358-8630",
+      "created_at": "2024-01-01 00:00:00"
+    },
+    {
+      "id": "staff_002",
+      "name": "Sarah Thompson",
+      "role": "Operations Manager",
+      "bio": "Sarah manages the day-to-day operations at Clear Choice Restoration, ensuring every project runs smoothly from initial consultation to final inspection. She handles scheduling, customer communications, and makes sure our team delivers on our promise of exceptional service.",
+      "photo": "Images/Staff/sarah-thompson.jpg",
+      "email": "sarah@clearchoicerestoration.com",
+      "phone": "(317) 358-8630",
+      "created_at": "2024-01-01 00:00:00"
+    },
+    {
+      "id": "staff_003",
+      "name": "James Rodriguez",
+      "role": "Lead Project Manager",
+      "bio": "James brings 15 years of roofing expertise to every project he manages. He specializes in complex storm damage assessments and insurance claim coordination, helping homeowners navigate the restoration process with confidence.",
+      "photo": "Images/Staff/james-rodriguez.jpg",
+      "email": "",
+      "phone": "",
+      "created_at": "2024-01-01 00:00:00"
+    },
+    {
+      "id": "staff_004",
+      "name": "David Chen",
+      "role": "Insurance Claims Specialist",
+      "bio": "David works directly with insurance companies to ensure our customers receive the full coverage they deserve. His expertise in documentation and claims processing has helped hundreds of Indianapolis homeowners get their roofs replaced at minimal out-of-pocket cost.",
+      "photo": "Images/Staff/david-chen.jpg",
+      "email": "",
+      "phone": "",
+      "created_at": "2024-01-01 00:00:00"
+    }
+  ]
+}

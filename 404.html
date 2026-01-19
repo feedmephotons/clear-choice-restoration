@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+
+  <title>Page Not Found | Clear Choice Restoration</title>
+
+  <link rel="icon" type="image/x-icon" href="Images/Logos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="256x256" href="Images/Logos/favicon-256.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="Images/Logos/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-8);
+      background: linear-gradient(135deg, var(--color-sky-pale) 0%, var(--color-white) 100%);
+    }
+
+    .error-content {
+      max-width: 600px;
+    }
+
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(100px, 20vw, 180px);
+      font-weight: 700;
+      color: var(--color-navy);
+      line-height: 1;
+      margin-bottom: var(--space-4);
+      text-shadow: 4px 4px 0 var(--color-sky-light);
+    }
+
+    .error-title {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      color: var(--color-gray-700);
+      margin-bottom: var(--space-4);
+    }
+
+    .error-message {
+      font-size: var(--text-lg);
+      color: var(--color-gray-500);
+      margin-bottom: var(--space-8);
+      line-height: 1.6;
+    }
+
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      justify-content: center;
+    }
+
+    .error-links {
+      margin-top: var(--space-10);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-gray-200);
+    }
+
+    .error-links h3 {
+      font-size: var(--text-lg);
+      color: var(--color-gray-600);
+      margin-bottom: var(--space-4);
+    }
+
+    .error-links ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      justify-content: center;
+    }
+
+    .error-links a {
+      color: var(--color-navy);
+      font-weight: 500;
+      padding: var(--space-2) var(--space-4);
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-fast);
+    }
+
+    .error-links a:hover {
+      color: var(--color-sky);
+      box-shadow: var(--shadow-md);
+    }
+
+    .error-contact {
+      margin-top: var(--space-8);
+      padding: var(--space-6);
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+
+    .error-contact p {
+      margin-bottom: var(--space-3);
+      color: var(--color-gray-600);
+    }
+
+    .error-contact .phone {
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--color-navy);
+    }
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Page Not Found</h1>
+      <p class="error-message">Sorry, the page you're looking for doesn't exist or has been moved. Don't worry - you can still get a free roof inspection!</p>
+
+      <div class="error-actions">
+        <a href="index.html" class="btn btn-primary btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 20px; height: 20px;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+          </svg>
+          Go Home
+        </a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">
+          Get Free Inspection
+        </a>
+      </div>
+
+      <div class="error-links">
+        <h3>Popular Pages</h3>
+        <ul>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="gallery.html">Project Gallery</a></li>
+          <li><a href="testimonials.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="error-contact">
+        <p>Need immediate assistance?</p>
+        <a href="tel:3173588630" class="phone">(317) 358-8630</a>
+        <p style="margin-top: var(--space-2); font-size: var(--text-sm);">Available 24/7 for emergencies</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
