@@ -335,8 +335,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo img {
-  height: 50px;
+  height: 55px;
   width: auto;
+  max-width: 240px;
 }
 
 .logo-text {
@@ -1086,7 +1087,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-brand .logo img {
   height: 60px;
-  filter: brightness(0) invert(1);
+  max-width: 280px;
 }
 
 .footer-brand p {
