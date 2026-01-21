@@ -969,9 +969,10 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../Images/Backgrounds/cta-texture-navy.jpg') center/cover;
-  opacity: 0.15;
-  mix-blend-mode: overlay;
+  background: linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%),
+              linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
 }
 
 .cta-section::after {
@@ -1041,9 +1042,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-section.cta-storm::before {
-  background: url('../Images/Backgrounds/cta-texture-storm.jpg') center/cover;
-  opacity: 0.25;
-  mix-blend-mode: soft-light;
+  background: linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.02) 75%),
+              linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.02) 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  opacity: 1;
+  mix-blend-mode: normal;
 }
 
 .cta-section.cta-storm::after {
@@ -1067,6 +1071,16 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-gray-800);
   color: var(--color-gray-300);
   padding-top: var(--space-16);
+  position: relative;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../Images/Backgrounds/navy-abstract.jpg') center/cover;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 .footer-main {
@@ -1083,11 +1097,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-brand .logo {
   margin-bottom: var(--space-5);
+  display: inline-block;
+  background: white;
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
 }
 
 .footer-brand .logo img {
-  height: 60px;
-  max-width: 280px;
+  height: 50px;
+  max-width: 260px;
+  display: block;
 }
 
 .footer-brand p {
@@ -2945,7 +2964,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-storm::before {
-  background: url('../Images/Backgrounds/cta-texture-storm.jpg') center/cover;
+  background: linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.02) 75%),
+              linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.02) 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
 }
 
 /* --------------------------------------------------------------------------
