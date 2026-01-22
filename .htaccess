@@ -84,10 +84,17 @@ ErrorDocument 500 /404.html
 #   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # </IfModule>
 
-# Remove .html extension (optional - cleaner URLs)
-# <IfModule mod_rewrite.c>
-#   RewriteEngine On
-#   RewriteCond %{REQUEST_FILENAME} !-d
-#   RewriteCond %{REQUEST_FILENAME}.html -f
-#   RewriteRule ^([^\.]+)$ $1.html [NC,L]
-# </IfModule>
+# Remove .html extension (cleaner URLs)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect .html URLs to clean URLs (for SEO)
+  RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+  RewriteRule ^ /%1 [NC,L,R=301]
+
+  # Serve .html file when clean URL is requested
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
