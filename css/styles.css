@@ -3089,3 +3089,120 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   line-height: 1.7;
 }
+
+/* ========================
+   Lightbox Gallery Grid
+   ======================== */
+
+.gallery-lightbox-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .gallery-lightbox-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-lightbox-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-lightbox-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-item-lb {
+  position: relative;
+  display: block;
+  aspect-ratio: 4/3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.gallery-item-lb:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.gallery-item-lb img,
+.gallery-item-lb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item-lb.video-item {
+  background: var(--color-gray-900);
+}
+
+.gallery-item-lb .play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  transition: var(--transition-base);
+}
+
+.gallery-item-lb:hover .play-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item-lb .play-overlay svg {
+  width: 64px;
+  height: 64px;
+  color: white;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+/* Full Gallery Page Styles */
+.gallery-full-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 1200px) {
+  .gallery-full-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-full-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-full-grid {
+    gap: var(--space-3);
+  }
+}
+
+.gallery-section-title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px solid var(--color-sky);
+}
+
+.gallery-section-title svg {
+  width: 24px;
+  height: 24px;
+  margin-right: var(--space-2);
+  vertical-align: middle;
+}

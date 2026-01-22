@@ -31,6 +31,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -532,6 +533,56 @@
       </div>
     </section>
 
+    <!-- Photo & Video Gallery Preview -->
+    <section class="section bg-light">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Our Work</span>
+          <h2 class="heading-2">See Our Quality Craftsmanship</h2>
+          <p>Browse photos and videos from our completed roofing and restoration projects throughout the Midwest.</p>
+        </div>
+
+        <div class="gallery-lightbox-grid" data-reveal>
+          <!-- Videos -->
+          <a href="Images/Gallery/videos/video-1.mp4" class="glightbox gallery-item-lb video-item" data-gallery="gallery1">
+            <video src="Images/Gallery/videos/video-1.mp4" muted></video>
+            <div class="play-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </a>
+          <a href="Images/Gallery/videos/video-4.mp4" class="glightbox gallery-item-lb video-item" data-gallery="gallery1">
+            <video src="Images/Gallery/videos/video-4.mp4" muted></video>
+            <div class="play-overlay">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </a>
+          <!-- Photos -->
+          <a href="Images/Gallery/photos/photo-1.jpg" class="glightbox gallery-item-lb" data-gallery="gallery1">
+            <img src="Images/Gallery/photos/photo-1.jpg" alt="Clear Choice Restoration project" loading="lazy">
+          </a>
+          <a href="Images/Gallery/photos/photo-5.jpg" class="glightbox gallery-item-lb" data-gallery="gallery1">
+            <img src="Images/Gallery/photos/photo-5.jpg" alt="Clear Choice Restoration project" loading="lazy">
+          </a>
+          <a href="Images/Gallery/photos/photo-10.jpg" class="glightbox gallery-item-lb" data-gallery="gallery1">
+            <img src="Images/Gallery/photos/photo-10.jpg" alt="Clear Choice Restoration project" loading="lazy">
+          </a>
+          <a href="Images/Gallery/photos/photo-15.jpg" class="glightbox gallery-item-lb" data-gallery="gallery1">
+            <img src="Images/Gallery/photos/photo-15.jpg" alt="Clear Choice Restoration project" loading="lazy">
+          </a>
+          <a href="Images/Gallery/photos/photo-20.jpg" class="glightbox gallery-item-lb" data-gallery="gallery1">
+            <img src="Images/Gallery/photos/photo-20.jpg" alt="Clear Choice Restoration project" loading="lazy">
+          </a>
+          <a href="Images/Gallery/photos/photo-25.jpg" class="glightbox gallery-item-lb" data-gallery="gallery1">
+            <img src="Images/Gallery/photos/photo-25.jpg" alt="Clear Choice Restoration project" loading="lazy">
+          </a>
+        </div>
+
+        <div class="text-center mt-12" data-reveal>
+          <a href="gallery.html" class="btn btn-primary btn-lg">View Full Gallery</a>
+        </div>
+      </div>
+    </section>
+
     <!-- Final CTA -->
     <section class="cta-section section">
       <div class="container">
@@ -658,5 +709,14 @@
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: true
+    });
+  </script>
 </body>
 </html>
