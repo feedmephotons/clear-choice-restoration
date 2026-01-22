@@ -779,21 +779,38 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
+.hero-background video,
 .hero-background img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.hero-background video {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-background .hero-fallback {
+  display: none;
+}
+
+/* Show fallback image if video fails to load */
+.hero-background video:not([src]) + .hero-fallback,
+.no-video .hero-background .hero-fallback {
+  display: block;
+}
+
+/* Blue overlay removed per client request - video background now visible */
 .hero-background::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(27, 75, 143, 0.92) 0%,
-    rgba(27, 75, 143, 0.75) 50%,
-    rgba(107, 163, 212, 0.6) 100%
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.15) 100%
   );
 }
 
