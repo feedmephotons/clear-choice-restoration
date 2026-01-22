@@ -10,7 +10,7 @@ header('Content-Type: application/json');
 
 // Configuration
 $config = [
-    'to_email' => 'info@ccrroof.com',
+    'to_email' => 'Clearchoicerestoration@yahoo.com',
     'from_email' => 'noreply@ccrroof.com',
     'company_name' => 'Clear Choice Restoration',
     'site_url' => 'https://ccrroof.com'
